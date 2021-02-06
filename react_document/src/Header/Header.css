@@ -1,0 +1,123 @@
+/* $d: 2.5em;
+$p: .5em;
+$g: .25em; */
+
+/* Button Night/Day */
+.navbar-brand{
+    font-size: 1rem !important;
+    font-weight: bold;
+    color: #323232 !important;
+}
+
+.nav-link{
+    font-weight: 500;
+}
+
+.fix_header{
+    position: fixed;
+    width: 100%;
+    box-shadow: 1.5px 1.5px 1.5px #ebebeb !important;
+    z-index: 999;
+}
+
+.day_header{
+    background-color: #ffffff;
+}
+
+.text_day{
+    color: #323232 !important;
+}
+
+.text_night{
+    color: #ffffff !important;
+}
+
+.night_header{
+    background-color: #292929 !important;
+    box-shadow: none !important;
+}
+
+.active{
+    color: #F6BD60 !important;
+}
+    
+    .switch{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    margin: 0px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(./sunny.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 2px rgba(255,255,255,.7);
+    transition: .7s ease-in-out;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #323232;
+    }
+    
+    .switch:checked{
+    background-image: url(./moon.png);
+    background-size: 25px;
+    background-position-x: .2rem;
+    transition: .7s ease-in-out;
+    }
+    
+    .switch:after{
+    content: '';
+    width: 10px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transform: translateX(0px);
+    animation: off .7s forwards cubic-bezier(.8, .5, .2, 1.4);
+    box-shadow: inset 5px -5px 4px rgba(53, 53, 53, 0.3);
+    }
+    
+    @keyframes off{
+    0%{
+        transform: translateX(40px);
+        width: 25px;
+    }
+    50%{
+        width: 40px;  
+        border-radius: 25px;   
+    }
+    100%{
+        transform: translateX(0px); 
+        width: 25px;
+    }
+    }
+    
+    
+    
+    .switch:checked:after{
+    animation: on .7s forwards cubic-bezier(.8, .5, .2, 1.4);
+    box-shadow: inset -5px -5px 4px rgba(53, 53, 53, 0.3);
+    }
+    
+    @keyframes on{
+    0%{
+        transform: translateX(0px);
+        width: 25px;
+    }
+    50%{
+        width: 30px;  
+        border-radius: 20px;   
+    }
+    100%{
+        transform: translateX(41px); 
+        width: 25px;
+    }
+    }
+    
+    
+    

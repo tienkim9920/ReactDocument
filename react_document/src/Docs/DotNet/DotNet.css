@@ -1,0 +1,164 @@
+
+.content{
+    padding: 4rem 4rem 3rem 4rem;
+}
+
+.h1_dotnet{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.h2_dotnet{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.img_content{
+    width: 49rem;
+}
+
+
+.col_submenu{
+    position: relative;
+}
+
+.ul_submenu{
+    position: fixed;
+    top: 8%;
+    padding: 1rem;
+}
+
+.li_submenu{
+    list-style: none;
+    font-size: .9rem;
+    margin-top: .5rem;
+    color: #818080;
+    cursor: pointer;
+}
+
+.a_submenu{
+    text-decoration: none !important;
+    color: #818080;
+}
+
+.a_submenu:hover{
+    color: #F6BD60 !important;
+    transition: all .3s ease-in;
+}
+
+.active_submenu{
+    color: #F6BD60 !important;
+}
+
+.li_submenu a{
+    color: #818080;
+}
+
+.bg_code{
+    background-color: #282A36;
+    border-radius: .2rem;
+    padding-left: 1rem;
+}
+
+.color_green{
+    color: #00B050;
+}
+
+.color_blue{
+    color: #BD93F9;
+}
+
+.color_sea{
+    color: #07B2F0;
+}
+
+.color_white{
+    color: white;
+}
+
+.color_red{
+    color: rgb(255, 74, 74);
+}
+
+.meno_unresponsive{
+    display: none;
+}
+
+.font_family{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: monospace;
+    font-size: 16px;
+    /* font-style: italic; */
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .meno_unresponsive{
+        display: block !important;
+    }
+
+    .menu_responsive{
+        display: none !important;
+    }
+    
+    .content {
+        padding: 0;
+    }
+
+    .grid_left{
+        display: none;
+    }
+
+    .col_content{
+        border-right: none !important;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .col_submenu{
+        display: none;
+    }
+
+    .row_wrapper{
+        display: block !important;
+        grid-template-columns: none !important;
+    }
+
+    .grid_right{
+        display: block !important;
+        grid-template-columns: none !important;
+    }
+
+    .pl-5, .px-5{
+        padding-left: 1rem !important;
+    }
+
+    img{
+        width: 100% !important;
+    }
+
+    .navigation_menu{
+        display: block !important;
+    }
+
+    .img_content{
+        width: 100% !important;
+    }
+
+    .menu{
+        background-color: #ffffff;
+    }
+
+    .menu_night{
+        background-color: #1f1f1f !important;
+    }
+
+    .menu_day{
+        background-color: #ffffff !important;
+    }
+}

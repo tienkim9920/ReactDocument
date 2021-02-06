@@ -1,0 +1,46 @@
+
+.banner{
+    /* background-color: #F6BD60; */
+    background-image: url(./banner4.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 8rem 2rem 6rem 2rem;
+}
+
+.h1_title{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.p_title{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+
+.button_start a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .6rem 1.8rem;
+    border: 1px solid #EBEDF0;
+    border-radius: .3rem;
+    color: #323232;
+}
+
+.button_start a:hover{
+    background-color: #EBEDF0;
+    color: #323232 !important;
+    transition: all .5s ease-in-out;
+}
+
+.img_home img{
+    width: 13rem;
+    height: 13rem;
+}
+
+.h4_bold{
+    font-weight: 700;
+}

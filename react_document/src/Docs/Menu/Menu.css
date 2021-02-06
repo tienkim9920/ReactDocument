@@ -1,0 +1,123 @@
+
+.main_wrapper{
+    position: relative;
+}
+
+.row_wrapper{
+    display: grid;
+    grid-template-columns: .391fr 1.6fr;
+}
+
+.row_wrapper_night{
+    background-color: #1f1f1f;
+}
+
+.grid_left{
+    /* background-color: yellow; */
+}
+
+.grid_right{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+
+.col_content{
+    /* background-color: green; */
+    border-right: 1px solid rgb(221, 221, 221, .7);
+}
+
+.menu{
+    border-right: 1px solid rgb(212, 212, 212, .7);
+    width: 19rem;
+    height: 100%;
+    position: fixed;
+    top: 7%;
+    z-index: 99;
+    padding: 1rem;
+}
+
+
+.col_content{
+
+  
+}
+
+.content{
+    width: 100%;
+}
+
+.li_menu{
+    list-style: none;
+    padding: .4rem .4rem .4rem .4rem;
+    cursor: pointer;
+}
+
+.li_menu:hover{
+    background-color: #f7f7f7;
+}
+
+.a_menu{
+    cursor: pointer;
+    color: #838383 !important;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-decoration: none !important;
+}
+
+.menu_list{
+    background-size: 1rem 1rem;
+    background-position: 50%;
+    content: " ";
+    display: inline-block;
+    height: .8rem;
+    width: .8rem;
+    border-right: 3.1px solid #6d6d6d;
+    border-bottom: 3.1px solid #6d6d6d;
+    transform: rotate(-45deg);
+    transition: .5s all ease-in-out;
+    margin-top: .4rem;
+}
+
+.menu_list_active{
+    transform: rotate(45deg);
+    transition: .5s all ease-in-out;
+}
+
+.li_active{
+    background-color: #f7f7f7;
+    color: #F6BD60 !important;
+    transition: all .2s ease-in-out;
+}
+
+.a_active{
+    color: #F6BD60 !important;
+}
+
+.li_detail:hover{
+    background-color: #f7f7f7;
+}
+
+.li_detail{
+    border-radius: .2rem;
+    list-style: none;
+    margin-left: .8rem;
+    margin-top: .2rem;
+    padding: .4rem .4rem .4rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.a_detail{
+    color: #6d6d6d;
+    text-decoration: none !important;
+}
+
+.a_detail:hover{
+    color: #6d6d6d;
+}
+
+.a_detail_active{
+    color: #F6BD60 !important;
+}
